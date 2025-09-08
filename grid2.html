@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professional Menu Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f5;
+      padding: 40px;
+    }
+
+    .menu-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .menu-title {
+      text-align: center;
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .item-name {
+      font-size: 20px;
+      font-weight: 600;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    .item-description {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin-bottom: 15px;
+    }
+
+    .item-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    @media (max-width: 600px) {
+      .menu-title {
+        font-size: 28px;
+      }
+
+      .item-name {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <div class="menu-title">Our Special Menu</div>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <div class="item-name">Paneer Butter Masala</div>
+        <div class="item-description">Creamy cottage cheese curry with Indian spices.</div>
+        <div class="item-price">₹220</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="item-name">Chicken Biryani</div>
+        <div class="item-description">Aromatic basmati rice cooked with spiced chicken.</div>
+        <div class="item-price">₹260</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="item-name">Veg Fried Rice</div>
+        <div class="item-description">Stir-fried rice with fresh vegetables and sauces.</div>
+        <div class="item-price">₹180</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="item-name">Masala Dosa</div>
+        <div class="item-description">Crispy dosa filled with spicy mashed potatoes.</div>
+        <div class="item-price">₹100</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="item-name">Cold Coffee</div>
+        <div class="item-description">Chilled coffee with a hint of chocolate and cream.</div>
+        <div class="item-price">₹70</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="item-name">Gulab Jamun</div>
+        <div class="item-description">Soft milk-solid balls soaked in sugar syrup.</div>
+        <div class="item-price">₹60</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
